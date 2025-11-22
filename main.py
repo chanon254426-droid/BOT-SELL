@@ -365,7 +365,6 @@ async def on_message(message: discord.Message):
         )
         
 # 🚀 รันบอท
-if __name__ == '__main__':
 try:
     server_on()
     bot.run(os.getenv('TOKEN')) 
@@ -373,3 +372,4 @@ except Exception as e:
     print(f"❌ เกิดข้อผิดพลาดในการรันบอท: {e}")
 
     print("กรุณาตรวจสอบ Token และสิทธิ์ 'Privileged Gateway Intents' ใน Discord Developer Portal")
+
